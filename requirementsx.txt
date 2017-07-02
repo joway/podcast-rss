@@ -1,6 +1,8 @@
+lxml==3.8.0
 feedparser==5.2.1
 Flask==0.12
 pytube==6.3.0
 requests==2.18.1
 feedgen==0.5.1
 uwsgi==2.0.15
+BeautifulSoup==4.6.0

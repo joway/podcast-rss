@@ -6,7 +6,7 @@ from utils.cache import cache_get, cache_set
 
 class YoutubePlugin(object):
     @classmethod
-    def parse_youtube_rss(cls, rss_url):
+    def handle(cls, rss_url):
         feeds = feedparser.parse(rss_url)
         title = feeds['feed']['title']
         ret = []
