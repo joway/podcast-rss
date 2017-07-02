@@ -22,6 +22,8 @@ def gen_podcast_rss(title, entries, file_path=None):
         fe = fg.add_entry()
         fe.id(entry['id'])
         fe.title(entry['title'])
+        fe.published(entry['published'])
+        fe.updated(entry['published'])
         fe.description(entry['description'], isSummary=True)
         fe.enclosure(entry['link'], 0, entry['type'])
         fe.link(href=entry['link'], rel='alternate')

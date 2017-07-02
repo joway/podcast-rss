@@ -23,6 +23,7 @@ class YoutubePlugin(object):
                 'id': video_id,
                 'title': entry['title'],
                 'description': entry['title'],
+                'published': entry['published'],
                 'link': video.url,
                 'type': 'video/{ext}'.format(ext=video.extension),
             }
