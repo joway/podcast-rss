@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-nohub python cronjob.py &
+nohup python cronjob.py &
 
 uwsgi --chdir=/code \
       --module=main \
